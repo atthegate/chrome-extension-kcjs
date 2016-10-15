@@ -11,7 +11,7 @@ Comcast describes the alert system as an "in-browser alert", which shows up in y
 Comcast Copyright Alert System - Alert #4
 ![Alt text](/images/comcast_cas_alert4.jpg?raw=true "CAS4")
 
-Looking at the web page source code whenever this alert appears, you can see that Comcast is simply intercepting the HTML file for the page you're browsing, appending a DIV element to act as the alert overlay, and then actually serving you the modified HTML. 
+Looking at the web page source code whenever this alert appears, you can see that Comcast is simply intercepting the HTML file for the page you're browsing, appending a DIV element to act as the alert overlay, and then  serving you the modified HTML. 
 
 Enter KCJS. This Chrome extension is a simple one-liner to remove the added alert overlay element via the following JS code...
 
@@ -19,4 +19,11 @@ Enter KCJS. This Chrome extension is a simple one-liner to remove the added aler
 
 It should run on every page load, and if a DIV element with an ID 'comcast_content' is present (i.e. the alert overlay), it will be removed.'
 
-
+To install the extension in Chrome...
+<ul>
+<li>Go to chrome://extensions/</li>
+<li>Turn on Developer Mode</li> 
+<li>Load unpacked extensions...</li>
+<li>Navigate to the extension-kcjs_0.1 folder and select it</li>
+<li>Done!</li>
+</ul>
