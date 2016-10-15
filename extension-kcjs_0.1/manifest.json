@@ -1,0 +1,12 @@
+{
+  "name": "kcjs",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "KC all the pages.",
+  "content_scripts": [
+    {
+		"matches": ["http://*/*"],
+		"js": ["contentscript.js"]
+    }
+  ]
+}
