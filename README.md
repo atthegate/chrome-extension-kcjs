@@ -17,7 +17,7 @@ Enter KCJS. This Chrome extension is a simple one-liner to remove the added aler
 
 <code>document.getElementById('comcast_content').remove();</code>
 
-It should run on every page load, and if a DIV element with an ID 'comcast_content' is present (i.e. the alert overlay), it will be removed.'
+It should run on every page load, and if a DIV element with an ID 'comcast_content' is present (i.e. the alert overlay), it will be removed.
 
 To install the extension in Chrome...
 <ul>
